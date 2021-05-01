@@ -70,5 +70,5 @@ git clone したディレクトリの`/webapps`（例：`~/Workspaces/docker/doc
 
 ## Webアプリケーションの開発
 
-EclipseでWebアプリ（動的Webプロジェクト）を開発する際には、以下のリポジトリのソースを参考にしてください。
+EclipseでWebアプリ（動的Webプロジェクト）を開発する際には、以下のリポジトリのソースを参考にしてください。  
 [https://github.com/ikd9684/JavaWebStudy.SampleDynamicWebProject](https://github.com/ikd9684/JavaWebStudy.SampleDynamicWebProject)
