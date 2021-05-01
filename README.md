@@ -61,3 +61,15 @@ Docker for desktop のダッシュボードか`docker ps -a`で MaridDB/Tomcat/A
 ## DBへの接続について
 
 起動したMariaDBには、Adminerや各種DBクライアントを使って、`docker-compose.yml`の`MYSQL_USER`と`MYSQL_PASSWORD`で接続可能です。
+
+
+## Webアプリケーションのデプロイ
+
+git clone したディレクトリの`/webapps`（例：`~/Workspaces/docker/docker-tomcat-mariadb/webapps`）に`.war`ファイルを格納するだけです。
+
+
+## Webアプリケーションの開発
+
+EclipseでWebアプリ（動的Webプロジェクト）を開発する際には、Tomcat Server の環境変数に以下を追加してください。  
+`DB_HOST`=`localhost`  
+![スクリーンショット 2021-05-02 0 19 21](https://user-images.githubusercontent.com/2688618/116786913-3bef5600-aadc-11eb-9152-b0ca33c3bcb5.png)
