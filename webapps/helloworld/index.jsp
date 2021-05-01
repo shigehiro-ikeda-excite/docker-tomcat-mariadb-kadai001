@@ -41,7 +41,8 @@
 
 <%
 String database = "excite_study";
-String url = "jdbc:mariadb://db:3306/" + database + "?UTF-8&serverTimezone=JST";
+String dbHost = System.getenv("DB_HOST");
+String url = "jdbc:mariadb://" + dbHost + ":3306/" + database + "?UTF-8&serverTimezone=JST";
 String user = "excite";
 String password = "excite";
 
