@@ -24,3 +24,5 @@ vendor/pkg/
 pyenv
 Vagrantfile
 
+*.class
+*.war

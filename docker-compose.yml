@@ -20,7 +20,9 @@ services:
         - 8081:8080
 
     tomcat:
-        image: tomcat:10.0.5
+        image: tomcat:9.0.45
+        environment:
+          DB_HOST: db
         volumes:
         - ./mariadb-java-client-2.7.1.jar:/usr/local/tomcat/lib/mariadb-java-client-2.7.1.jar
         - ./webapps:/usr/local/tomcat/webapps
