@@ -58,7 +58,15 @@ Docker for desktop のダッシュボードか`docker ps -a`で MaridDB/Tomcat/A
 [http://127.0.0.1:8081/](http://127.0.0.1:8081/)
 
 
-## DBへの接続について
+## DBへの初期化SQL実行
+
+`.initdb.d/`配下にある.sqlファイルがアルファベット順に実行されるので、ここでテーブルの作成と初期データの投入を行っています。  
+
+[https://hub.docker.com/_/mariadb](https://hub.docker.com/_/mariadb)
+> コンテナを初めて起動すると、指定した名前のデータベースが作成され、指定した設定変数で初期化されます。さらに、/docker-entrypoint-initdb.dにある拡張子.sh、.sql、.sql.gz、.sql.xzのファイルが実行されます。ファイルはアルファベット順に実行されます。ファイル実行権限のない.shファイルは、実行されるのではなく、ソースされます。このディレクトリにSQLダンプをマウントすることで、簡単にmariadbサービスを投入することができ、コントリビュートされたデータでカスタムイメージを提供することができます。SQL ファイルはデフォルトでは MYSQL_DATABASE 変数で指定されたデータベースにインポートされます。
+
+
+## DBへの接続
 
 起動したMariaDBには、Adminerや各種DBクライアントを使って、`docker-compose.yml`の`MYSQL_USER`と`MYSQL_PASSWORD`で接続可能です。
 

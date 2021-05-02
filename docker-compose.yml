@@ -7,11 +7,17 @@ services:
       restart: always
       ports:
         - 3306:3306
+      command:
+        - mysqld
+        - --character-set-server=utf8mb4
+        - --collation-server=utf8mb4_unicode_ci
       environment:
         MYSQL_ROOT_PASSWORD: exciteroot
         MYSQL_DATABASE: excite_study
         MYSQL_USER: excite
         MYSQL_PASSWORD: excite
+      volumes:
+        - ./initdb.d:/docker-entrypoint-initdb.d
 
     adminer:
       image: adminer:4.8.0
