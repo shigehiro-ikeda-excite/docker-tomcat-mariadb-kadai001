@@ -21,7 +21,7 @@ Docker の導入方法はここでは触れませんので、各自調べてく�
 
 以上。  
 
-```bash
+```
 % pwd
 /Users/~/Workspaces/docker/docker-tomcat-mariadb
 %
