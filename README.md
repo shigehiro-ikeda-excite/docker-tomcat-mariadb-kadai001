@@ -15,10 +15,12 @@ Docker の導入方法はここでは触れませんので、各自調べてく�
 
 ## 使い方
 
-1. このリポジトリを任意のディレクトリに`git clone`する。
-1. [Download MariaDB Products & Tools | MariaDB](https://mariadb.com/downloads/#connectors)からMariaDBのJDBCドライバ（[mariadb-java-client-2.7.1.jar](https://downloads.mariadb.com/Connectors/java/connector-java-2.7.1/)）をダウンロードして、git clone したディレクトリ直下へ格納する。  
+1. このリポジトリを任意のディレクトリに git clone する。  
+`git clone https://github.com/ikd9684/docker-tomcat-mariadb.git`  
+3. [Download MariaDB Products & Tools | MariaDB](https://mariadb.com/downloads/#connectors)からMariaDBのJDBCドライバ（[mariadb-java-client-2.7.1.jar](https://downloads.mariadb.com/Connectors/java/connector-java-2.7.1/)）をダウンロードして、git clone したディレクトリ直下へ格納する。  
 `wget https://downloads.mariadb.com/Connectors/java/connector-java-2.7.1/mariadb-java-client-2.7.1.jar`  
-3. git clone したディレクトリで`docker-compose up -d`
+3. git clone したディレクトリで以下のコマンドを実行する。  
+`docker-compose up -d`  
 
 以上。  
 
